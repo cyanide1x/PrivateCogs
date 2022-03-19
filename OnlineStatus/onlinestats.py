@@ -56,11 +56,11 @@ class OnlineStats(commands.Cog):
 			m = m if m == 'offline' else 'streaming'
 			w = w if w == 'offline' else 'streaming'
 		status = {
-			'online': '\U0001f7e2',
-			'idle': '\U0001f7e0',
-			'dnd': '\N{LARGE RED CIRCLE}',
-			'offline': '\N{MEDIUM WHITE CIRCLE}',
-			'streaming': '\U0001f7e3'
+			'online': '<:online:847969069454065714>',
+			'idle': '<:idle:849010554273792001>',
+			'dnd': '<:dnd:849010298786807839>',
+			'offline': '<:offline:849010299503378432>',
+			'streaming': '<:StreamingDOT:954576772542914571>'
 		}
 		embed = discord.Embed(
 			title=f'**{member.display_name}\'s devices:**',
