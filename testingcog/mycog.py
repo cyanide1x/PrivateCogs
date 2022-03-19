@@ -9,7 +9,7 @@ class MyCog(commands.Cog):
         bot.add_dev_env_value("mycog", lambda ctx: self)
         bot.add_dev_env_value(
             "mycogdata", lambda ctx: self.settings[ctx.guild.id])
-        bot.add_dev_env_value("uptime", lambda ctx: self.uptime)
+        bot.add_dev_env_value("uptime", lambda ctx: self.bot.uptime)
 
     def cog_unload(self):
         self.bot.remove_dev_env_value("mycog")
